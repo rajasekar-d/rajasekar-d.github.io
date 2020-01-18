@@ -450,7 +450,7 @@ p{
     margin-bottom: 160px;
 }
 .workshop{
-    background-image: url('assets/images/hot-at-uxmint.png');
+    background-image: url('../images/hot-at-uxmint.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -489,7 +489,7 @@ p{
     margin-bottom: 140px;
 }
 .metamorph{
-    background-image: url('assets/images/hot-at-uxmint.png');
+    background-image: url('../images/hot-at-uxmint.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -796,7 +796,7 @@ p{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('assets/images/not-hard.jpg');
+    background-image: url('../images/not-hard.jpg');
 }
 .not-hard{
     min-height: 660px;
