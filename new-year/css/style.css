@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+body, html {
+	min-height: 100%;
+	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+body {
+	background: -webkit-radial-gradient(bottom, ellipse, #1B2735 0%, #090A0F 100%);
+	background: -o-radial-gradient(bottom, ellipse, #1B2735 0%, #090A0F 100%);
+	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+	font-family: 'Concert One', sans-serif;
+}
+.btn,
+.btn:focus{
+	outline: 0;
+	box-shadow: none;
+}
+#fireworks{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.fireworks {
+	width: 100%;
+	height: 100%;
+}
+#bg-audio {
+	display: none;
+}
+/* Header */
+header{
+	padding: 10px 20px;
+	text-align: right;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+header .btn{
+	font-size: 1.4rem !important;
+	color: #FFF !important;
+}
+.flex-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.valign-wrapper {
+	min-height: 100vh;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.tlt {
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080;
+}
+span[aria-label^="Hi"], span[aria-label^="Hey"] {
+	font-size: 4rem;
+}
+span[aria-label^="I"], span[aria-label^="From"] {
+	font-size: 3rem;
+}
+span[aria-label^="Happy"] {
+	font-size: 5rem;
+}
+footer {
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	height: 70px;
+	color: #FFF;
+	font-size: 1.4rem;
+}
+
+/* Social Icons */
+.social-icons li{
+	display: inline-block;
+}
+.social-icons li a{
+	font-size: 34px;
+}
+.btn-facebook {
+	color: #3b5998;
+}
+.btn-twitter{
+	color: #55acee;
+}
+.btn-google{
+	color: #dd4b39;
+}
+.btn-linkedin{
+	color: #007bb6;
+}
+/* ./Social Icons */
+@media (max-width: 767px) {
+	span[aria-label^="Hi"], span[aria-label^="Hey"] {
+		font-size: 3rem;
+	}
+	span[aria-label^="I"], span[aria-label^="From"] {
+		font-size: 2rem;
+	}
+	span[aria-label^="Happy"] {
+		font-size: 4rem;
+	}
+	#wisher {
+		font-size: 0.8rem;
+	}
+}

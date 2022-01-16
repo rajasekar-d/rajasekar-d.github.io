@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Happy New Year 2022!</title>
+	<!-- Attribution -->
+	<!--
+     _____       _                _              
+    |  __ \     (_)              | |             
+    | |__) |__ _ _  __ _ ___  ___| | ____ _ _ __ 
+    |  _  // _` | |/ _` / __|/ _ \ |/ / _` | '__|
+    | | \ \ (_| | | (_| \__ \  __/   < (_| | |   
+    |_|  \_\__,_| |\__,_|___/\___|_|\_\__,_|_|   
+               _/ |                              
+              |__/
+    -->
+	<!-- End Attribution -->
+	<!-- Pre Resolving DNS -->
+	<link href="https://fonts.googleapis.com" rel="dns-prefetch">
+	<link href="https://fonts.gstatic.com" rel="dns-prefetch">
+	<link href="https://www.google-analytics.com" rel="dns-prefetch">
+	<link href="https://cdnjs.cloudflare.com" rel="dns-prefetch">
+	<!-- End Pre Resolving DNS -->
+	<!-- Favicon -->
+	<link href="favcon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+	<link href="favcon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+	<link href="favcon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+	<link href="favcon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+	<link href="favcon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="favcon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+	<link href="favcon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+	<link href="favcon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+	<link href="favcon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="favcon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+	<link href="favcon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="favcon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="favcon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="favcon/manifest.json" rel="manifest">
+	<meta content="#ffffff" name="msapplication-TileColor">
+	<meta content="favcon/ms-icon-144x144.png" name="msapplication-TileImage">
+	<meta content="#ffffff" name="theme-color">
+	<!-- End Favicon -->
+	<!-- RWD -->
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- End RWD -->
+	<!-- Styles -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- End Styles -->
+</head>
+<body>
+	<!-- Fireworks  -->
+	<div id="fireworks">
+		<div class="fireworks"></div>
+	</div>
+	<!-- ./Fireworks -->
+	<!-- Background Audio -->
+	<div id="bg-audio">
+		<audio autoplay="autoplay" id="audio" loop="loop" preload="preload">Your browser does not support the audio element. <source src="audio/new_year.ogg" type="audio/ogg"> <source src="audio/new_year.mp3" type="audio/mpeg"></audio>
+	</div>
+	<!-- ./Background Audio -->
+	<!-- Header -->
+	<header>
+		<button class="btn"><i class="fas fa-volume-off"></i> Volume</button>
+		<button class="btn" data-toggle="modal" data-target="#shareInputModal"><i class="fas fa-share-alt"></i> Share</button>
+	</header>
+	<!-- ./Header -->
+	<!-- New Year Wishes -->
+	<div class="container">
+		<div class="flex-wrapper">
+			<div class="valign-wrapper">
+				<div class="tlt" data-loop="true">
+					<ul class="texts" style="display: none;">
+						<li data-out-effect="fadeOut" data-out-shuffle="true"></li>
+						<li data-in-effect="fadeIn" data-out-effect="fadeOut" data-out-shuffle="true">I wish that all your wishes are fulfilled this year...</li>
+						<li data-in-effect="rotateIn" data-out-effect="rotateOut" data-out-shuffle="true">Happy New Year 2022!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ./New Year Wishes -->
+	<!-- Wisher Name -->
+	<footer>
+		-Wish from <span data-in-effect="bounceIn" data-loop="true" data-out-effect="bounceOut" data-out-shuffle="true"></span>
+	</footer>
+	<!-- ./Wisher Name -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="shareInputModal" tabindex="-1" role="dialog" aria-labelledby="shareInputModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<form autocomplete="off">
+					<div class="modal-header">
+						<h5 class="modal-title">Share with your friends!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="from" class="col-form-label">Your Name:</label>
+							<input type="text" class="form-control" name="from" id="from">
+						</div>
+						<div class="form-group">
+							<label for="name" class="col-form-label">Friend Name:</label>
+							<input type="text" class="form-control" name="name" id="name">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary shadow">Generate</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="shareLinkModal" tabindex="-1" role="dialog" aria-labelledby="shareLinkModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Share with your friends!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<label for="your-name" class="col-form-label">Link to Share...</label>
+							<div class="row">
+								<div class="col-md-9">
+									<p id="shareURL"></p>
+								</div>
+								<div class="col-md-3">
+									<button type="button" class="btn btn-sm btn-primary shadow" data-clipboard-target="#shareURL">Copy</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<label for="social-networks" class="col-form-label">Share on Social Network...</label>
+							<ul class="list-unstyled social-icons">
+								<li>
+									<a class="btn-facebook" data-href="https://www.facebook.com/sharer/sharer.php?u={{URL}}" target="_BLANK"><i class="fab fa-facebook-square"></i></a>
+								</li>
+								<li>
+									<a class="btn-twitter" data-href="https://twitter.com/home?status={{URL}}" target="_BLANK"><i class="fab fa-twitter-square"></i></a>
+								</li>
+								<li>
+									<a class="btn-google" data-href="https://plus.google.com/share?url={{URL}}" target="_BLANK"><i class="fab fa-google-plus-square"></i></a>
+								</li>
+								<li>
+									<a class="btn-linkedin" data-href="https://www.linkedin.com/shareArticle?mini=true&url={{URL}}&title=&summary=&source=" target="_BLANK"><i class="fab fa-linkedin"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script> 
+	<script src="js/jquery.fireworks.js"></script> 
+	<script src="js/script.js"></script>
+	<!-- End Scripts -->
+	<!-- Google Analytics -->
+	<script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	   ga('create', 'UA-106616464-2', 'auto');
+	   ga('send', 'pageview', {
+	       'dimension1': wisherName+'|'+name
+	   });
+	</script>
+	<!-- End Google Analytics -->
+</body>
+</html>
